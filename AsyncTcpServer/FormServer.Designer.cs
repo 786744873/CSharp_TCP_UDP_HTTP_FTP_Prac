@@ -1,6 +1,6 @@
-﻿namespace SyncChatServer
+﻿namespace AsyncTcpServer
 {
-    partial class MainForm
+    partial class FormServer
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -38,10 +38,10 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.listBoxStatus);
-            this.groupBox1.Location = new System.Drawing.Point(23, 32);
+            this.groupBox1.Location = new System.Drawing.Point(13, 15);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(457, 167);
-            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "状态信息";
             // 
@@ -56,35 +56,35 @@
             // 
             // buttonStop
             // 
-            this.buttonStop.Location = new System.Drawing.Point(265, 217);
+            this.buttonStop.Location = new System.Drawing.Point(255, 200);
             this.buttonStop.Name = "buttonStop";
             this.buttonStop.Size = new System.Drawing.Size(75, 23);
-            this.buttonStop.TabIndex = 9;
+            this.buttonStop.TabIndex = 11;
             this.buttonStop.Text = "停止监听";
             this.buttonStop.UseVisualStyleBackColor = true;
             this.buttonStop.Click += new System.EventHandler(this.buttonStop_Click);
             // 
             // buttonStart
             // 
-            this.buttonStart.Location = new System.Drawing.Point(114, 217);
+            this.buttonStart.Location = new System.Drawing.Point(104, 200);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(75, 23);
-            this.buttonStart.TabIndex = 8;
+            this.buttonStart.TabIndex = 10;
             this.buttonStart.Text = "开始监听";
             this.buttonStart.UseVisualStyleBackColor = true;
             this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
-            // MainForm
+            // FormServer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(513, 252);
+            this.ClientSize = new System.Drawing.Size(482, 239);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonStop);
             this.Controls.Add(this.buttonStart);
-            this.Name = "MainForm";
-            this.Text = "SyncChatServer";
-            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.Name = "FormServer";
+            this.Text = "异步TCP聊天服务器端";
+            this.Load += new System.EventHandler(this.FormServer_Load);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
