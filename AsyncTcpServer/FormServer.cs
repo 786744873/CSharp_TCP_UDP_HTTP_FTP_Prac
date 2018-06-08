@@ -52,7 +52,7 @@ namespace AsyncTcpServer
         /// </summary>
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            myListener = new TcpListener(localAddress, port);
+            myListener = new TcpListener(IPAddress.Parse("127.0.0.1"), port);
             myListener.Start();
             AddItemToListBox(string.Format("开始在{0}：{1}监听客户连接", localAddress, port));
             Thread myThread = new Thread(ListenClientConnect);
@@ -63,7 +63,16 @@ namespace AsyncTcpServer
 
         private void buttonStop_Click(object sender, EventArgs e)
         {
-
+            AddItemToListBox("开始停止服务，并依次使用户退出");
+            isExit = true;
+            for (int i = userList.Count-1; i >=0; i--)
+            {
+                RemoveUser(userList[i]);
+            }
+            //通过停止监听myListener.AcceptTcpClient()产生异常来退出监听线程
+            myListener.Stop();
+            buttonStart.Enabled = true;
+            buttonStop.Enabled = false;
         }
 
         /// <summary>
@@ -232,7 +241,7 @@ namespace AsyncTcpServer
             }
             catch 
             {
-                AddItemToListBox(string.Format("向[{0}]发送信息失败",user.userName))
+                AddItemToListBox(string.Format("向[{0}]发送信息失败", user.userName));
                 throw;
             }
         }

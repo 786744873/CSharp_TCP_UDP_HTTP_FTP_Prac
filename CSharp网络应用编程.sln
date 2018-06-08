@@ -101,6 +101,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03利用同步TCP编写网�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncTcpServer", "AsyncTcpServer\AsyncTcpServer.csproj", "{55CFE753-5580-4351-B57B-4125EA201B8A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncTcpClient", "AsyncTcpClient\AsyncTcpClient.csproj", "{BC9C231A-7AFE-4AAC-8247-EF5F1773EF58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -207,6 +209,10 @@ Global
 		{55CFE753-5580-4351-B57B-4125EA201B8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55CFE753-5580-4351-B57B-4125EA201B8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55CFE753-5580-4351-B57B-4125EA201B8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC9C231A-7AFE-4AAC-8247-EF5F1773EF58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC9C231A-7AFE-4AAC-8247-EF5F1773EF58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC9C231A-7AFE-4AAC-8247-EF5F1773EF58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC9C231A-7AFE-4AAC-8247-EF5F1773EF58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -257,6 +263,7 @@ Global
 		{A8B7D0A3-A05B-4E5F-8762-B1F213BF2D31} = {837691E8-AFAE-4F8F-B8D1-C677106A09E2}
 		{2ED91638-736E-47BF-A0AA-890103A93338} = {B49A429F-366B-4C0A-A61F-375E0E661530}
 		{55CFE753-5580-4351-B57B-4125EA201B8A} = {2ED91638-736E-47BF-A0AA-890103A93338}
+		{BC9C231A-7AFE-4AAC-8247-EF5F1773EF58} = {2ED91638-736E-47BF-A0AA-890103A93338}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C76B6592-AC01-4539-B7F1-8F9252444317}
